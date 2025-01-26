@@ -21,4 +21,8 @@ const countOccurrences = (array) => {
     return obj;
   }, {});
 };
-module.exports = { findDuplicates, removeDuplicates, countOccurrences };
+module.exports = {
+  findDuplicates,
+  removeDuplicates,
+  countOccurrences,
+};
