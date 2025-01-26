@@ -15,5 +15,10 @@ const removeDuplicates = (array) => {
   return [...new Set(array)];
 };
 
-console.log(findDuplicates([1, 2, 2, 3, 4, 2, 1, 5, 6, 7, 8]));
-module.exports = { findDuplicates, removeDuplicates };
+const countOccurrences = (array) => {
+  return array.reduce((obj, item) => {
+    obj[item] = (obj[item] || 0) + 1;
+    return obj;
+  }, {});
+};
+module.exports = { findDuplicates, removeDuplicates, countOccurrences };
